@@ -39,7 +39,7 @@ public class Parser {
     }
 
     public static void main(String[] args){ //main di prova, cancellami poi
-        String nFile = "prova.txt";
+        String nFile = "TMP Tempi e materie registrate.txt"; //"prova.txt"
         String[] strFile;
         try{
             strFile = readFile(nFile);
