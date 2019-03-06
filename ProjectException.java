@@ -22,3 +22,9 @@ class MonthException extends ProjectException {
         super(msg);
     }
 }
+
+class DayException extends ProjectException {
+    public DayException(String msg) {
+        super(msg);
+    }
+}

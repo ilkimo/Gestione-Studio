@@ -28,7 +28,7 @@ public class NumberManagement { /* This class manages the numbers from dates of 
 
         return true;
     }
-    //---------------------------------------------------------------------------------------------------------------------------------
+    //Valid month check----------------------------------------------------------------------------------------------------------------
     public static boolean validMonth(String month) throws MonthException {
         int m = Integer.parseInt(removeNonSignificativeDigits(month));
 
@@ -38,6 +38,10 @@ public class NumberManagement { /* This class manages the numbers from dates of 
 
         return true;
     }
+    //Valid day check------------------------------------------------------------------------------------------------------------------
+    /*Implementare controllo sul numero del giorno corretto (in base al numero dell'anno e del mese inseriti,
+     * controllare che sia una data possibile, controllare specialmente anni bisestili)*/
+     
     //---------------------------------------------------------------------------------------------------------------------------------
 
     /*public static void main(String[] args) {

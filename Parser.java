@@ -33,7 +33,7 @@ public class Parser {
             }
         }
         catch (FileNotFoundException e) {throw e;}
-        catch (IOException e){throw e;}
+        catch (IOException e) {throw e;}
 
         return res;
     }
