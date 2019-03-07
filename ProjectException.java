@@ -28,3 +28,9 @@ class DayException extends ProjectException {
         super(msg);
     }
 }
+
+class FileLinesException extends ProjectException {
+    public FileLinesException(String msg) {
+        super(msg);
+    }
+}
