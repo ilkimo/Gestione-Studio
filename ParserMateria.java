@@ -1,5 +1,5 @@
 
-public class ParserMateria extends Materia {
+public class ParserMateria extends Parser {
     private String[] fileLines;
 
     public ParserMateria() {}
