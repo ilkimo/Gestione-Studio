@@ -27,6 +27,8 @@ public class Materia {
 
     private void setNomeMateria(String str) {nomeMateria = str; /*this. e' opzionale*/}
 
+    private void setCalendario(String[][][] cal) {calendario = cal;}
+
     public int getOreTot() {return oreTot; /*this. e' opzionale*/}
 
     public int getOreTeor() {return oreTeor; /*this. e' opzionale*/}
