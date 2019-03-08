@@ -3,6 +3,9 @@ Progetto gestione studio
 ---OBIETTIVO---
 	Creare un software che analizza i dati raccolti durante le sessioni di studio,
 creando grafici ecc.ecc.
+-------------
+IMPORTANTE:
+	- Implementare controllo nella lettura da file (non ci deve essere il carattere '$' nel file, perche' viene usato dal programma interno (ParserMateria) come separatore
 --------------
 
 Robe da fare:
