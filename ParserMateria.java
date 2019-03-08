@@ -10,9 +10,19 @@ public class ParserMateria extends Parser {
     //get--------------------------------------------------------------------------------------------------------------------------------
     public String[] getFileLines() {return fileLines;}
     //-----------------------------------------------------------------------------------------------------------------------------------
+    /* Voglio che:
+     * 2019\02\11 16:45-19:55 2h 0mnt "Matematica Discreta"{FrAccra, Cri Milanesio}[casa]
+     * diventi:
+     * 2019$2$11$16$45$19$55$2$0$Matematic Discreta$FrAccra, Cri Milanesio$casa
+     * se ci sono campi mancanti sostituire il campo con la stringa "campoNullo" (o magari metterlo proprio null o ""...)
+     * (aggiungere controllo che non ci siano gia' "campoNullo" nella stringa)
+     */
+    public String recorsiveFunction() {return "";/*MODIFICAMI*/}
+
     public void initializeSubject(Materia subject, String inputStr) throws FileLinesException {
         if(fileLines != null) {
-            
+            subject.addToCalendar(recorsiveFunction(/*FARE COSE*/)/*Recorsive function doing checks and returning the string we want in the calendar*/, '$');
+
         } else {
             throw new FileLinesException("Exception, trying to initialize calendar from fileLines == null");
         }
