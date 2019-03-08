@@ -14,7 +14,7 @@ public class ParserMateria extends Parser {
      * 2019\02\11 16:45-19:55 2h 0mnt "Matematica Discreta"{FrAccra, Cri Milanesio}[casa]
      * diventi:
      * 2019$2$11$16$45$19$55$2$0$Matematic Discreta$FrAccra, Cri Milanesio$casa
-     * se ci sono campi mancanti sostituire il campo con la stringa "campoNullo" (o magari metterlo proprio null o ""...)
+     * se ci sono campi mancanti sostituire il campo con la stringa "null"
      * (aggiungere controllo che non ci siano gia' "campoNullo" nella stringa)
      */
     public String recorsiveFunction() {return "";/*MODIFICAMI*/}
