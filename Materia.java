@@ -77,4 +77,4 @@ private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
         this.setSize(this.getSize() + 1);
     }
     //---------------------------------------------------------------------------------------------------------------------------------
-}
+}//sono un robo da cancellare
