@@ -61,7 +61,7 @@ private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
     }
     //---------------------------------------------------------------------------------------------------------------------------------
     public void addToCalendar(String str, char regex) { //str has to be a String containing all the values to add separated by a regex
-        //01RIPRENDI DA QUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+        //01RIPRENDI DA Calendario.java, poi QUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
 
         //modifica size
     }
