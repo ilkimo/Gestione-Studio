@@ -30,12 +30,13 @@ public class Calendario {
         this.mntFineSessione = new int[]{mntFineSessione};
         this.oreTimer = new int[]{oreTimer};
         this.mntTimer = new int[]{mntTimer};
-        this.ramo = new String[]{"null"};
-        this.compagniaStudio = new String[]{"null"};
-        this.luogoStudio = new String[]{"null"};
+        this.ramo = new String[]{ramo};
+        this.compagniaStudio = new String[]{compagniaStudio};
+        this.luogoStudio = new String[]{luogoStudio};
         this.size = 1;
     }
     //set e get-----------------------------------------------------------------------------------------------------------------------------
+
     public int getSize() {return this.size;}
 
     public int getAnno(int index) throws NullArrayException, IndexOutOfBoundssException {
@@ -165,15 +166,53 @@ public class Calendario {
 
         return this.luogoStudio[index];
     }
-    //FINIRE LE FUNZIONI GETTTTTttttttttttttt
-
-    //--------------------------------------------------------------------------------------------------------------------------------------
-    public void addSize() {
+    //robe utili----------------------------------------------------------------------------------------------------------------------------
+    private void addSize() {
         this.size++;
     }
 
-    public void addSession(int anno, int mese, int giorno, int oraInizioSessione, int mntInizioSessione, int oraFineSessione, int mntFineSessione, int oreTimer, int mntTimer, String ramo, String compagniaStudio, String luogoStudio) {
+    private void subtractSize() throws notValidSizeException {
+        if(size == 0) throw new notValidSizeException("Can't do this.size--, size is already " + this.size);
 
+        this.size--;
     }
-    //FINIREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+
+    public void addSession(int anno, int mese, int giorno, int oraInizioSessione, int mntInizioSessione, int oraFineSessione, int mntFineSessione, int oreTimer, int mntTimer, String ramo, String compagniaStudio, String luogoStudio) {
+        //RIPRENDI DA QUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+        
+    }
+
+    public static int[] newSize(int[] arr, int newCells) throws NullArrayException {
+        int[] newArr;
+
+        if(arr != null){
+            newArr = new int[arr.length + newCells];
+
+            for(int i = 0; i < arr.length; ++i) {
+                newArr[i] = arr[i];
+            }
+            //CAPIRE SE NELLE CELLE NUOVE BISOGNA METTERCI UN QUALCHE VALORE TIPO -1 O COSA
+        } else {
+            throw new NullArrayException("Exception: Calendario.newSize was given a null array");
+        }
+
+        return newArr;
+    }
+
+    public static String[] newSize(String[] arr, int newCells) throws NullArrayException {
+        String[] newArr;
+
+        if(arr != null){
+            newArr = new String[arr.length + newCells];
+
+            for(int i = 0; i < arr.length; ++i) {
+                newArr[i] = arr[i];
+            }
+            //CAPIRE SE NELLE CELLE NUOVE BISOGNA METTERCI UN QUALCHE VALORE TIPO -1 O COSA
+        } else {
+            throw new NullArrayException("Exception: Calendario.newSize was given a null array");
+        }
+
+        return newArr;
+    }
 }

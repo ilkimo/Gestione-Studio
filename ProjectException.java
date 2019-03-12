@@ -46,3 +46,9 @@ class IndexOutOfBoundssException extends ProjectException {
         super(msg);
     }
 }
+
+class notValidSizeException extends ProjectException {
+    public notValidSizeException(String msg) {
+        super(msg);
+    }
+}
