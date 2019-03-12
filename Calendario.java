@@ -177,27 +177,31 @@ public class Calendario {
         this.size--;
     }
 
-    public void addSession(int anno, int mese, int giorno, int oraInizioSessione, int mntInizioSessione, int oraFineSessione, int mntFineSessione, int oreTimer, int mntTimer, String ramo, String compagniaStudio, String luogoStudio) {
-        //RIPRENDI DA QUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-        /*
-        this.anno = new int[]{anno};
-        this.mese = new int[]{mese};
-        this.giorno = new int[]{giorno};
-        this.oraInizioSessione = new int[]{oraInizioSessione};
-        this.mntInizioSessione = new int[]{mntInizioSessione};
-        this.oraFineSessione = new int[]{oraFineSessione};
-        this.mntFineSessione = new int[]{mntFineSessione};
-        this.oreTimer = new int[]{oreTimer};
-        this.mntTimer = new int[]{mntTimer};
-        this.ramo = new String[]{ramo};
-        this.compagniaStudio = new String[]{compagniaStudio};
-        this.luogoStudio = new String[]{luogoStudio};
-        this.size = 1;
-        */
+    public void addSession(int anno, int mese, int giorno, int oraInizioSessione, int mntInizioSessione, int oraFineSessione, int mntFineSessione, int oreTimer, int mntTimer, String ramo, String compagniaStudio, String luogoStudio) throws NullArrayException {
+        //SE LANCIA UN ERRORE FERMA TUTTO PERCHE' NON DOVREBBE MAI SUCCEDERE
+        //PENSAVO DI METTERE IL METODO BOOLEANO, IN MODO DA POTER SAPERE SE L'OPERAZIONE SIA ANDATA A BUON FINE E IN CASO UPLOADARE O ALTRO
+        try{
+        addIntData(this.anno, anno);
+        addIntData(this.mese, mese);
+        addIntData(this.giorno, giorno);
+        addIntData(this.oraInizioSessione, oraInizioSessione);
+        addIntData(this.mntInizioSessione, mntInizioSessione);
+        addIntData(this.oraFineSessione, oraFineSessione);
+        addIntData(this.mntFineSessione, mntFineSessione);
+        addIntData(this.oreTimer, oreTimer);
+        addIntData(this.mntTimer, mntTimer);
+        addStringData(this.ramo, ramo);
+        addStringData(this.compagniaStudio, compagniaStudio);
+        addStringData(this.luogoStudio, luogoStudio);
+        }
+        catch(NullArrayException e) {
+            throw e;
+        }
         addSize();
+
     }
 
-    public int[] addIntData(int[] arr, int data) throws NullArrayException {
+    public static int[] addIntData(int[] arr, int data) throws NullArrayException {
         if(arr != null) {
             arr = newSize(arr, 1);
             arr[arr.length - 1] = data;
@@ -208,7 +212,7 @@ public class Calendario {
         return arr;
     }
 
-    public String[] addIntData(String[] arr, String data) throws NullArrayException {
+    public String[] addStringData(String[] arr, String data) throws NullArrayException {
         if(arr != null) {
             arr = newSize(arr, 1);
             arr[arr.length - 1] = data;
