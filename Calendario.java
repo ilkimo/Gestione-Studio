@@ -135,6 +135,36 @@ public class Calendario {
 
         return this.mntTimer[index];
     }
+
+    public String getRamo(int index) throws NullArrayException, IndexOutOfBoundssException {
+        if(this.ramo == null) {
+            throw new NullArrayException("String[] ramo == null");
+        } else if(index < 0 || index >= this.ramo.length) {
+            throw new IndexOutOfBoundssException(index + " is not a valid Index for String[] ramo, wich has length = " + this.ramo.length);
+        }
+
+        return this.ramo[index];
+    }
+
+    public String getCompagniaStudio(int index) throws NullArrayException, IndexOutOfBoundssException {
+        if(this.compagniaStudio == null) {
+            throw new NullArrayException("String[] compagniaStudio == null");
+        } else if(index < 0 || index >= this.compagniaStudio.length) {
+            throw new IndexOutOfBoundssException(index + " is not a valid Index for String[] compagniaStudio, wich has length = " + this.compagniaStudio.length);
+        }
+
+        return this.compagniaStudio[index];
+    }
+
+    public String getLuogoStudio(int index) throws NullArrayException, IndexOutOfBoundssException {
+        if(this.luogoStudio == null) {
+            throw new NullArrayException("String[] luogoStudio == null");
+        } else if(index < 0 || index >= this.luogoStudio.length) {
+            throw new IndexOutOfBoundssException(index + " is not a valid Index for String[] luogoStudio, wich has length = " + this.luogoStudio.length);
+        }
+
+        return this.luogoStudio[index];
+    }
     //FINIRE LE FUNZIONI GETTTTTttttttttttttt
 
     //--------------------------------------------------------------------------------------------------------------------------------------
