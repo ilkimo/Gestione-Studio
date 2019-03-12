@@ -194,13 +194,24 @@ public class Calendario {
         this.luogoStudio = new String[]{luogoStudio};
         this.size = 1;
         */
+        addSize();
     }
 
     public int[] addIntData(int[] arr, int data) throws NullArrayException {
         if(arr != null) {
             arr = newSize(arr, 1);
             arr[arr.length - 1] = data;
-            addSize();
+        } else {
+            throw new NullArrayException("Exception: addIntData was given a null array");
+        }
+
+        return arr;
+    }
+
+    public String[] addIntData(String[] arr, String data) throws NullArrayException {
+        if(arr != null) {
+            arr = newSize(arr, 1);
+            arr[arr.length - 1] = data;
         } else {
             throw new NullArrayException("Exception: addIntData was given a null array");
         }
