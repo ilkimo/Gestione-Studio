@@ -5,14 +5,12 @@ public class Materia {
     private String nomeMateria; //indeciso se mettere final (pero' in caso in cui uno scrive un nome sbagliato poi bisogna cambiare)
     private Calendario cal;
     private int size; //dimensione stack[][][] calendario, ci sono elementi fino alla riga size - 1
-    public final int campi = 13, maxCompagniaStudio = 10; //posso segnare al massimo 10 persone per sessione
     //costruttori----------------------------------------------------------------------------------------------------------------------
     public Materia() {
         setOreTot(0);
         setOrePrat(0);
         setOreTeor(0);
         setNomeMateria("");
-        setSize(0);
     }
 
     public Materia(String name) {
@@ -20,7 +18,6 @@ public class Materia {
         setOrePrat(0);
         setOreTeor(0);
         setNomeMateria(name);
-        setSize(0);
     }
     //set e get------------------------------------------------------------------------------------------------------------------------
 private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
@@ -31,8 +28,6 @@ private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
 
     private void setNomeMateria(String str) {this.nomeMateria = str; /*this. e' opzionale*/}
 
-    private void setSize(int n) {this.size = n; /*this. e' opzionale*/}
-
     public int getOreTot() {return this.oreTot; /*this. e' opzionale*/}
 
     public int getOreTeor() {return this.oreTeor; /*this. e' opzionale*/}
@@ -41,24 +36,6 @@ private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
 
     public String getNomeMateria() {return this.nomeMateria; /*this. e' opzionale*/}
 
-    public int getSize() {return this.size; /*this. e' opzionale*/}
-
-    public String[][][] getStandardSessionEmptyArr() {
-        String[][][] arr = new String[1][this.campi][];
-
-        for(int i = 0; arr != null && i < arr[0].length && i < 11; ++i) {
-            arr[0][i] = new String[]{"null"};
-        }
-
-        arr[0][11] = new String[maxCompagniaStudio];
-        for(int z = 0; z < maxCompagniaStudio; ++z) {
-            arr[0][11][z] = "null";
-        }
-
-        arr[0][12] = new String[]{"null"};
-
-        return arr;
-    }
     //---------------------------------------------------------------------------------------------------------------------------------
     public void addToCalendar(String str, char regex) { //str has to be a String containing all the values to add separated by a regex
         //01RIPRENDI DA Calendario.java, poi QUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII

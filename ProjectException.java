@@ -34,3 +34,15 @@ class FileLinesException extends ProjectException {
         super(msg);
     }
 }
+
+class NullArrayException extends ProjectException {
+    public NullArrayException(String msg) {
+        super(msg);
+    }
+}
+
+class IndexOutOfBoundssException extends ProjectException {
+    public IndexOutOfBoundssException(String msg) {
+        super(msg);
+    }
+}
