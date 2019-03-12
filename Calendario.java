@@ -179,7 +179,33 @@ public class Calendario {
 
     public void addSession(int anno, int mese, int giorno, int oraInizioSessione, int mntInizioSessione, int oraFineSessione, int mntFineSessione, int oreTimer, int mntTimer, String ramo, String compagniaStudio, String luogoStudio) {
         //RIPRENDI DA QUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
-        
+        /*
+        this.anno = new int[]{anno};
+        this.mese = new int[]{mese};
+        this.giorno = new int[]{giorno};
+        this.oraInizioSessione = new int[]{oraInizioSessione};
+        this.mntInizioSessione = new int[]{mntInizioSessione};
+        this.oraFineSessione = new int[]{oraFineSessione};
+        this.mntFineSessione = new int[]{mntFineSessione};
+        this.oreTimer = new int[]{oreTimer};
+        this.mntTimer = new int[]{mntTimer};
+        this.ramo = new String[]{ramo};
+        this.compagniaStudio = new String[]{compagniaStudio};
+        this.luogoStudio = new String[]{luogoStudio};
+        this.size = 1;
+        */
+    }
+
+    public int[] addIntData(int[] arr, int data) throws NullArrayException {
+        if(arr != null) {
+            arr = newSize(arr, 1);
+            arr[arr.length - 1] = data;
+            addSize();
+        } else {
+            throw new NullArrayException("Exception: addIntData was given a null array");
+        }
+
+        return arr;
     }
 
     public static int[] newSize(int[] arr, int newCells) throws NullArrayException {
