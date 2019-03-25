@@ -10,7 +10,7 @@ IMPORTANTE:
 
 Robe da fare:
 
-1) Finire il parser, in modo che passi riga per riga del file ad una classe
+	1) Finire il parser, in modo che passi riga per riga del file ad una classe
 	che sappia riconoscere la sintassi dei dati inseriti e salvare i dati nei vari oggetti (Materie)
 	in modo ordinato
 2) Aggiungere il controllo sulla data veritiera nella classe NumberManagement, specialmente
@@ -40,3 +40,15 @@ Robe da fare:
 9) Aggiungere il display di vari grafici
 
 10) boh zio ora ho steso una lista veloce, ma c'e' sicuramente un botto di altra roba che non mi sta venendo in mente hahaha ciao
+
+------------------
+STATO ATTUALE:
+
+- sto lavorando alla lettura e interpretazione dei dati in entrata dai file che contengono le sessioni di studio
+- FINIRE:
+	- DOVE SONO ORA: Materia.addSession(String str) {...} e provengo da ListaMaterie. addFormattedData(String[][] str)
+	- ListaMaterie.addFormattedData(String formattedData)
+	/	- ParserMateria.formatStr(Str string)
+	- ParserMateria.formatContent(String fileName)
+
+------------------

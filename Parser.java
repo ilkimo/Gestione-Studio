@@ -1,5 +1,3 @@
-import java.io.FileReader;
-import java.io.BufferedReader;
 import java.io.*;
 
 public class Parser {
@@ -21,7 +19,7 @@ public class Parser {
         return counter;
     }
 
-    private static String[] readFile(String fileName)throws FileNotFoundException, IOException {
+    public static String[] readFile(String fileName)throws FileNotFoundException, IOException {
         int fLength = fileLength(fileName);
         String[] res = new String[fLength];
 
