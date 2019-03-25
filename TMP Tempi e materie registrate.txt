@@ -1,70 +1,88 @@
-ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria{Persona1ConCuiHoStudiato, Persona2...}[Luogo]
+ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale sottogruppo){Persona1ConCuiHoStudiato, Persona2...}[Luogo]
 
-2019\01\09 1h 6mnt "Programmazione1"\teoria
-2019\01\09 0h 55mnt "Ricerca Operativa"\esercizi
-2019\01\11 2h 0mnt "Programmazione1"\programmazione
-2019\01\11 1h 7mnt "Programmazione1"\teoria
-2019\01\11 0h 55mnt "Ricerca Operativa"\esercizi
-2019\01\12 0h 25mnt "Programmazione1"\programmazione
-2019\01\13 1h 16mnt "Programmazione1"\teoria
-2019\01\14 1h 20mnt "Programmazione1"\teoria
-2019\01\14 0h 10mnt "Programmazione1"\programmazione
-2019\01\15 1h 3mnt "Programmazione1"\teoria
-2019\01\16 1h 36mnt "Programmazione1"\teoria
-2019\01\16 1h 7mnt "Ricerca Operativa"\teoria
-2019\01\17 2h 3mnt "Programmazione1"\programmazione
-2019\01\18 0h 45mnt "Programmazione1"\teoria
-2019\01\19 0h 32mnt "Programmazione1"\teoria
-2019\01\20 1h 4mnt "Programmazione1"\teoria
-2019\01\21 1h 11mnt "Programmazione1"\teoria
-2019\01\21 1h 2mnt "Programmazione1"\programmazione
-2019\01\22 2h 15mnt "Programmazione1"\prova d'esame 1 finita
-2019\01\22 0h 24mnt "Programmazione1"\prova d'esame 2
-2019\01\23 0h 57mnt "Programmazione1"\prova d'esame 2 finita
-2019\01\23 0h 54mnt "Programmazione1"\prova d'esame 3 finita
-2019\01\23 1h 4mnt "Programmazione1"\programmazione
-2019\01\25 1h 15mnt "Ricerca Operativa"\esercizi
-2019\01\25 0h 25mnt "Logica Matematica"\teoria
-2019\01\26 1h 0mnt "Logica Matematica"\teoria
-2019\01\27 1h 0mnt "Logica Matematica"\teoria
-2019\01\27 0h 56mnt "Logica Matematica"\teoria
-2019\01\27 0h 27mnt "Logica Matematica"\teoria
-2019\01\28 0h 57mnt "Logica Matematica"\teoria
-2019\01\28 0h 30mnt "Ricerca Operativa"\teoria
-2019\01\28 1h 10mnt "Logica Matematica"\teoria
-2019\01\28 0h 30mnt "Logica Matematica"\teoria
-2019\02\01 0h 32mnt "Ricerca Operativa"\teoria
-2019\02\01 14:11-15:00 0h 46mnt "Ricerca Operativa"\teoria
-2019\02\01 18:17-19:24 0h 48mnt "Ricerca Operativa"\teoria
-2019\02\02 15:00-17:20 1h 38mnt "Ricerca Operativa"\teoria{FrAccra}
-2019\02\02 18:39-19:37 0h 54mnt "Ricerca Operativa"\teoria{Vale}
-2019\02\02 21:30-22:34 1h 4mnt "Ricerca Operativa"\esercizi{Vale}
-2019\02\03 13:00-13:48 0h 46mnt "Ricerca Operativa"\esercizi{Vale}[casa]
-2019\02\03 14:05-14:38 0h 32mnt "Ricerca Operativa"\teoria{Vale}[casa]
-2019\02\03 17:53-18:54 0h 48mnt "Ricerca Operativa"\teoria{}[casa]
-2019\02\03 19:40-20:13 0h 30mnt "Ricerca Operativa"\teoria{}[casa]
-2019\02\03 21:42-22:57 1h 8mnt "Ricerca Operativa"\teoria{}[casa]
-2019\02\03 23:17-23:38 0h 21mnt "Ricerca Operativa"\teoria{}[casa]
-2019\02\06 9:19-10:27 0h 53mnt "Matematica Discreta"\teoria{FrAccra}[Pianaudi]
-2019\02\06 10:57-11:57 0h 43mnt "Matematica Discreta"\teoria{FrAccra}[Pianaudi]
-2019\02\06 13:49-15:07 1h 0mnt "Matematica Discreta"\teoria{FrAccra}[Pianaudi]
-2019\02\06 15:30-16:23 0h 35mnt "Matematica Discreta"\teoria{FrAccra}[Pianaudi]
-2019\02\06 17:12-18:15 0h 57mnt "Matematica Discreta"\teoria{FrAccra}[Pianaudi]
-2019\02\09 14:44-15:51 0h 55mnt "Matematica Discreta"\teoria{}[casa]
-2019\02\09 16:31-17:05 0h 33mnt "Matematica Discreta"\teoria{}[casa]
-2019\02\09 18:19-18:37 0h 15mnt "Matematica Discreta"\teoria{}[casa]
-2019\02\10 15:59-18:39 2h 32mnt "Programmazione"{}[casa]
-2019\02\11 16:45-19:55 2h 0mnt "Matematica Discreta"{FrAccra, Milanesio}[casa]
-2019\02\12 15:10-16:29 1h 8mnt "Matematica Discreta"{Vale}[casa]
-2019\02\12 16:53-18:23 0h 30mnt "Matematica Discreta"{Vale}[casa]
-2019\02\12 21:03-21:19 0h 15mnt "Matematica Discreta"{Vale}[Foresto]
-2019\02\13 10:27-11:35 0h 40mnt "Matematica Discreta"{Vale}[Foresto]
-2019\02\13 14:54-15:25 0h 29mnt "Matematica Discreta"{}[casa]
-2019\02\13 17:34-18:15 0h 41mnt "Matematica Discreta"{}[casa]
-2019\02\28 14:36-15:50 1h 8mnt "Architettura degli Elaboratori"\introduzione{Vale, compagnoUni}[aula studio Informatica]
-2019\02\28 16:22-16:30 0h 7mnt "Analisi 1"\teoria{Vale, compagnoUni}[aula studio Informatica]
-2019\02\28 16:44-16:59 0h 15mnt "Analisi 1"\equazioni differenziali{Vale, compagnoUni}[aula studio Informatica]
-2019\03\01 14:19-17:00 2h 12mnt "Architettura degli Elaboratori"{compagnoUni}[aula studio Informatica]
-2019\03\02 17:28-20:45 1h 22mnt "Architettura degli Elaboratori"{Vale}[casa]
-2019\03\04 15:26-16:12 0h 44mnt "Architettura degli Elaboratori"\teoria{}[aula studio Informatica]
-2019\03\04 16:14-16:29 0h 15mnt "Architettura degli Elaboratori"\esercizi{}[aula studio Informatica]
+2019_01_09_null_null_null_null_1_6_Programmazione1_teoria_null_null_null
+2019_01_09_null_null_null_null_0_55_Ricerca Operativa_esercizi_null_null_null
+2019_01_11_null_null_null_null_2_0_Programmazione1_programmazione_null_null_null
+2019_01_11_null_null_null_null_1_7_Programmazione1_teoria_null_null_null
+2019_01_11_null_null_null_null_0_55_Ricerca Operativa_esercizi_null_null_null
+2019_01_12_null_null_null_null_0_25_Programmazione1_programmazione_null_null_null
+2019_01_13_null_null_null_null_1_16_Programmazione1_teoria_null_null_null
+2019_01_14_null_null_null_null_1_20_Programmazione1_teoria_null_null_null
+2019_01_14_null_null_null_null_0_10_Programmazione1_programmazione_null_null_null
+2019_01_15_null_null_null_null_1_3_Programmazione1_teoria_null_null_null
+2019_01_16_null_null_null_null_1_36_Programmazione1_teoria_null_null_null
+2019_01_16_null_null_null_null_1_7_Ricerca Operativa_teoria_null_null_null
+2019_01_17_null_null_null_null_2_3_Programmazione1_programmazione_null_null_null
+2019_01_18_null_null_null_null_0_45_Programmazione1_teoria_null_null_null
+2019_01_19_null_null_null_null_0_32_Programmazione1_teoria_null_null_null
+2019_01_20_null_null_null_null_1_4_Programmazione1_teoria_null_null_null
+2019_01_21_null_null_null_null_1_11_Programmazione1_teoria_null_null_null
+2019_01_21_null_null_null_null_1_2_Programmazione1_esercizi_null_null_null
+2019_01_22_null_null_null_null_2_15_Programmazione1_esercitazione_prova d'esame 1_null_null
+2019_01_22_null_null_null_null_0_24_Programmazione1_esercitazione_prova d'esame 2_null_null
+2019_01_23_null_null_null_null_0_57_Programmazione1_esercitazione_prova d'esame 2_null_null
+2019_01_23_null_null_null_null_0_54_Programmazione1_esercitazione_prova d'esame 3_null_null
+2019_01_23_null_null_null_null_1_4_Programmazione1_esercizi_null_null_null
+2019_01_25_null_null_null_null_1_15_Ricerca Operativa_esercizi_null_null_null
+2019_01_25_null_null_null_null_0_25_Logica Matematica_teoria_null_null_null
+2019_01_26_null_null_null_null_1_0_Logica Matematica_teoria_null_null_null
+2019_01_27_null_null_null_null_1_0_Logica Matematica_teoria_null_null_null
+2019_01_27_null_null_null_null_0_56_Logica Matematica_teoria_null_null_null
+2019_01_27_null_null_null_null_0_27_Logica Matematica_teoria_null_null_null
+2019_01_28_null_null_null_null_0_57_Logica Matematica_teoria_null_null_null
+2019_01_28_null_null_null_null_0_30_Ricerca Operativa_teoria_null_null_null
+2019_01_28_null_null_null_null_1_10_Logica Matematica_teoria_null_null_null
+2019_01_28_null_null_null_null_0_30_Logica Matematica_teoria_null_null_null
+2019_02_01_null_null_null_null_0_32_Ricerca Operativa_teoria_null_null_null
+2019_02_01_14_11_15_00_0_46_Ricerca Operativa_teoria_null_null_null
+2019_02_01_18_17_19_24_0_48_Ricerca Operativa_teoria_null_null_null
+2019_02_02_15_00_17_20_1_38_Ricerca Operativa_teoria_null_FrAccra_null
+2019_02_02_18_39_19_37_0_54_Ricerca Operativa_teoria_null_Vale_null
+2019_02_02_21_30_22_34_1_4_Ricerca Operativa_esercizi_null_Vale_null
+2019_02_03_13_00_13_48_0_46_Ricerca Operativa_esercizi_null_Vale_casa
+2019_02_03_14_05_14_38_0_32_Ricerca Operativa_teoria_null_Vale_casa
+2019_02_03_17_53_18_54_0_48_Ricerca Operativa_teoria_null_null_casa
+2019_02_03_19_40_20_13_0_30_Ricerca Operativa_teoria_null_null_casa
+2019_02_03_21_42_22_57_1_8_Ricerca Operativa_teoria_null_null_casa
+2019_02_03_23_17_23_38_0_21_Ricerca Operativa_teoria_null_null_casa
+2019_02_06_9_19_10_27_0_53_Matematica Discreta_teoria_null_FrAccra_Pianaudi
+2019_02_06_10_57_11_57_0_43_Matematica Discreta_teoria_null_FrAccra_Pianaudi
+2019_02_06_13_49_15_07_1_0_Matematica Discreta_teoria_null_FrAccra_Pianaudi
+2019_02_06_15_30_16_23_0_35_Matematica Discreta_teoria_null_FrAccra_Pianaudi
+2019_02_06_17_12_18_15_0_57_Matematica Discreta_teoria_null_FrAccra_Pianaudi
+2019_02_09_14_44_15_51_0_55_Matematica Discreta_teoria_null_null_casa
+2019_02_09_16_31_17_05_0_33_Matematica Discreta_teoria_null_null_casa
+2019_02_09_18_19_18_37_0_15_Matematica Discreta_teoria_null_null_casa
+2019_02_10_15_59_18_39_2_32_Programmazione_null_null_null_casa
+2019_02_11_16_45_19_55_2_0_Matematica Discreta_null_null_FrAccra, Milanesio_casa
+2019_02_12_15_10_16_29_1_8_Matematica Discreta_null_null_Vale_casa
+2019_02_12_16_53_18_23_0_30_Matematica Discreta_null_null_Vale_casa
+2019_02_12_21_03_21_19_0_15_Matematica Discreta_null_null_Vale_Foresto
+2019_02_13_10_27_11_35_0_40_Matematica Discreta_null_null_Vale_Foresto
+2019_02_13_14_54_15_25_0_29_Matematica Discreta_null_null_null_casa
+2019_02_13_17_34_18_15_0_41_Matematica Discreta_null_null_null_casa
+2019_02_28_14_36_15_50_1_8_Architettura degli Elaboratori_introduzione_null_Vale, compagnoUni_aula studio Informatica
+2019_02_28_16_22_16_30_0_7_Analisi 1_teoria_null_Vale, compagnoUni_aula studio Informatica
+2019_02_28_16_44_16_59_0_15_Analisi 1_teoria_equazioni differenziali_Vale, compagnoUni_aula studio Informatica
+2019_03_01_14_19_17_00_2_12_Architettura degli Elaboratori_null_null_compagnoUni_aula studio Informatica
+2019_03_02_17_28_20_45_1_22_Architettura degli Elaboratori_null_null_Vale_casa
+2019_03_04_15_26_16_12_0_44_Architettura degli Elaboratori_teoria_null_null_aula studio Informatica
+2019_03_04_16_14_16_29_0_15_Architettura degli Elaboratori_esercizi_null_null_aula studio Informatica
+2019_03_06_13_45_14_53_1_0_Programmazione_null_null_null_treno
+2019_03_07_15_05_15_48_0_43_Architettura degli elaboratori_esercizi_Conversioni_Vale, compagni Uni_aula studio Informatica
+2019_03_07_16_04_17_24_1_0_Architettura degli elaboratori_esercizi_Conversioni_Vale_aula studio Informatica
+2019_03_08_13_55_14_59_1_0_Architettura degli elaboratori_esercizi_Conversioni_compagni Uni_aula studio Informatica
+2019_03_08_15_16_16_29_1_5_Architettura degli elaboratori_esercizi_Conversioni_compagni Uni_aula studio Informatica
+2019_03_08_16_35_17_38_0_36_Architettura degli elaboratori_esercizi_Conversioni_compagni Uni_aula studio Informatica
+2019_03_10_15_43_16_21_0_37_Architettura degli elaboratori_esercizi_Conversioni_Vale_Foresto
+2019_03_10_16_56_17_29_0_33_Architettura degli elaboratori_esercizi_Conversioni_null_Foresto
+2019_03_10_17_36_17_55_0_19_Architettura degli elaboratori_teoria_null_null_Foresto
+2019_03_10_18_27_18_53_0_22_Architettura degli elaboratori_teoria_null_Vale, Meli_Foresto
+2019_03_10_19_35_21_33_1_20_Architettura degli elaboratori_teoria_null_Vale, Meli_Foresto
+2019_03_11_10_00_10_38_0_30_Architettura degli elaboratori_teoria_null_Vale_Foresto
+2019_03_13_null_null_null_null_1_30_Programmazione 2_esercizi_null_Vale_Susa
+2019_03_14_null_null_null_null_2_0_Programmazione 2_esercizi_null_null_null
+2019_03_15_14_39_17_39_2_06_Architettura degli elaboratori_esercizi_Conversioni_null_aula studio Informatica
+2019_03_16_15_39_17_04_0_57_Architettura degli elaboratori_teoria_Complemento a2_null_casa
+2019_03_16_19_03_20_58_1_13_Architettura degli elaboratori_teoria_Rappresentazione in Eccesso, Floating Point_Gabuz, Berru, Gio_casa
+2019_03_17_16_23_17_26_0_44_Architettura degli elaboratori_teoria_Floating point: Standard IEEE754_Berru_casa

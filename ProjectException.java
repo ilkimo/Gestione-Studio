@@ -52,3 +52,20 @@ class notValidSizeException extends ProjectException {
         super(msg);
     }
 }
+
+class NotValidStringException extends ProjectException {
+    public NotValidStringException(String msg) {
+        super(msg);
+    }
+}
+
+class NotPredictedCaseException extends ProjectException {
+    public NotPredictedCaseException(String msg) {
+        super(msg);
+    }
+}
+class StringException extends ProjectException {
+    public StringException(String msg) {
+        super(msg);
+    }
+}

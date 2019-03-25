@@ -1,32 +1,40 @@
-//anno\mese\giorno oraInizio:mntInizio-oraFine:mntFine oreEffettiveh minutiEffettivimnt "Materia"\ramo{Persona1, Persona2...}[luogo]
+//anno\mese\giorno oraInizio:mntInizio-oraFine:mntFine oreEffettiveh minutiEffettivimnt "Materia"\ramo(approondimento1, approfondimento2){Persona1, Persona2...}[luogo]
 //13 colonne (al momento)
 public class Materia {
-    private int oreTot, oreTeor, orePrat;
+    private int oreTot, mntTot, oreTeor, orePrat;
     private String nomeMateria; //indeciso se mettere final (pero' in caso in cui uno scrive un nome sbagliato poi bisogna cambiare)
     private Calendario cal;
     private int size; //dimensione stack[][][] calendario, ci sono elementi fino alla riga size - 1
     //costruttori----------------------------------------------------------------------------------------------------------------------
     public Materia() {
         setOreTot(0);
+        setMntTot(0);
         setOrePrat(0);
         setOreTeor(0);
+        cal = new Calendario();
         setNomeMateria("");
     }
 
     public Materia(String name) {
         setOreTot(0);
+        setMntTot(0);
         setOrePrat(0);
         setOreTeor(0);
+        cal = new Calendario();
         setNomeMateria(name);
     }
     //set e get------------------------------------------------------------------------------------------------------------------------
-private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
+    private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
+
+    private void setMntTot(int n) {this.mntTot = n;}
 
     private void setOreTeor(int n) {this.oreTeor = n; /*this. e' opzionale*/}
 
     private void setOrePrat(int n) {this.orePrat = n; /*this. e' opzionale*/}
 
     private void setNomeMateria(String str) {this.nomeMateria = str; /*this. e' opzionale*/}
+
+    public int getMntTot() {return this.mntTot;}
 
     public int getOreTot() {return this.oreTot; /*this. e' opzionale*/}
 
@@ -37,10 +45,38 @@ private void setOreTot(int n) {this.oreTot = n; /*this. e' opzionale*/}
     public String getNomeMateria() {return this.nomeMateria; /*this. e' opzionale*/}
 
     //---------------------------------------------------------------------------------------------------------------------------------
-    public void addToCalendar(String str, char regex) { //str has to be a String containing all the values to add separated by a regex
-        //01RIPRENDI DA Calendario.java, poi QUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII
+    public boolean equalsIgnoreCase(String str) {
+        return this.getNomeMateria().equalsIgnoreCase(str);
+    }
 
-        //modifica size
+    public boolean equalsIgnoreCase(Materia other) {
+        return this.getNomeMateria().equalsIgnoreCase(other.getNomeMateria());
     }
     //---------------------------------------------------------------------------------------------------------------------------------
-}//sono un robo da cancellare
+    public boolean addSession(String[][] str) {
+        //ok l'idea e' di modificare della roba, farsi che quando creo la materia viene instanziato un calendario vuoto, e fare un
+        //metodo nella classe Calendario, dove io da qui ci schiaffo la stringa e basta e poi la separo come si deve in quel metodo
+        boolean res = false;
+        try{
+            res = cal.addSession(str);
+            mntTot += Integer.parseInt(str[8][0]); //ho sbagliato che non sto incrementando i minuti in generale, ma solo nelle variabili delle varie materie
+            //devo creare variabili ore e minuti della lista
+
+            while(mntTot >= 60) {
+                setMntTot(mntTot - 60);
+                setOreTot(oreTot + 1);
+            }
+
+            oreTot += Integer.parseInt(str[7][0]);
+        }
+        catch(StringException e) {System.out.println(e.getMessage());}
+
+        return res;
+    }
+
+    public void print() {
+        System.out.println(getNomeMateria() + ":");
+        cal.print();
+    }
+    //---------------------------------------------------------------------------------------------------------------------------------
+}
