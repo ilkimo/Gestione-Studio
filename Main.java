@@ -10,21 +10,29 @@ public class Main {
     //-------------------------------------------------------------------------------------------------------------------------------
     public static void printInstructions() {
         System.out.println("Instructions list:");
-        System.out.println("    - " + (char)34 + "exit" + (char)34 + " per uscire.");
-        System.out.println("    - " + (char)34 + "print" + (char)34 + " per stampare le sessioni per ogni materia");
-        System.out.println("    _ " + (char)34 + "ore tot" + (char)34 + "per stampare il numero di ore di studio totali");
+        System.out.println("    - " + (char)34 + "e" + (char)34 + " per uscire.");
+        System.out.println("    - " + (char)34 + "p" + (char)34 + " per stampare le sessioni per ogni materia");
+        System.out.println("    - " + (char)34 + "toth" + (char)34 + "per stampare il numero di ore di studio totali");
+        System.out.println("    - " + (char)34 + "h nomeMateria" + (char)34 +  " per stampare il numero di ore di studio di quella mateira, se esiste");
+        System.out.println("    - " + (char)34 + "h ord cresc" + (char)34 + "per stampare n.ore delle materie ordinate in modo crescente");
+
+        System.out.println();
     }
 
     public static void fai(String robaDaFare) {
-        if(robaDaFare.equalsIgnoreCase("print")) {System.out.println("\nlista contiene: "); lista.print();}
-        if(robaDaFare.equalsIgnoreCase("ore tot")) {System.out.println("Tempo totale di studio: " + lista.totH() + " ore e " + lista.totMnt() + " minuti");}
-        if(robaDaFare.matches("ore [ a-zA-Z0-9]+") && lista.hasSubject(robaDaFare.substring(4, robaDaFare.length())) != -1) {
-            int index = lista.hasSubject(robaDaFare.substring(4, robaDaFare.length()));
+        if(robaDaFare.equalsIgnoreCase("p")) {System.out.println("\nlista contiene: "); lista.print();}
+        if(robaDaFare.equalsIgnoreCase("toth")) {System.out.println("\nTempo totale di studio: " + lista.totH() + " ore e " + lista.totMnt() + " minuti");}
+        if(robaDaFare.matches("h [ a-zA-Z0-9]+") && lista.hasSubject(robaDaFare.substring(2, robaDaFare.length())) != -1) {
+            int index = lista.hasSubject(robaDaFare.substring(2, robaDaFare.length()));
 
-            System.out.print("Di " + robaDaFare.substring(4, robaDaFare.length()) + " hai studiato: " + lista.subjectList[index].getOreTot() + " ore");
+            System.out.print("\nDi " + robaDaFare.substring(2, robaDaFare.length()) + " hai studiato: " + lista.subjectList[index].getOreTot() + " ore");
             System.out.println(" e " + lista.subjectList[index].getMntTot() + " minuti");
         }
-        if(robaDaFare.equals("ore ord cresc")) {lista.printOre("ord cresc");}
+        if(robaDaFare.equals("h ord cresc")) {lista.printOre("ord cresc");}
+
+        pause();
+        System.out.println();
+        printInstructions();
     }
 
     //-------------------------------------------------------------------------------------------------------------------------------
@@ -90,10 +98,8 @@ public class Main {
         do{
             System.out.print("Next Instruction: ");
             risposta = tastiera.nextLine();
-            fai(risposta);
-
-
-        } while(!risposta.matches("exit"));
+            if(!risposta.equalsIgnoreCase("e")) {fai(risposta);}
+        } while(!risposta.equalsIgnoreCase("e"));
 
     }
 }
