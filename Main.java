@@ -16,9 +16,17 @@ public class Main {
     }
 
     public static void fai(String robaDaFare) {
-        if(robaDaFare.matches("print")) {System.out.println("\nlista contiene: "); lista.print();}
-        if(robaDaFare.matches("ore tot")) {System.out.println("Numero di ore di studio totali: " + lista.totH());}
+        if(robaDaFare.equalsIgnoreCase("print")) {System.out.println("\nlista contiene: "); lista.print();}
+        if(robaDaFare.equalsIgnoreCase("ore tot")) {System.out.println("Tempo totale di studio: " + lista.totH() + " ore e " + lista.totMnt() + " minuti");}
+        if(robaDaFare.matches("ore [ a-zA-Z0-9]+") && lista.hasSubject(robaDaFare.substring(4, robaDaFare.length())) != -1) {
+            int index = lista.hasSubject(robaDaFare.substring(4, robaDaFare.length()));
+
+            System.out.print("Di " + robaDaFare.substring(4, robaDaFare.length()) + " hai studiato: " + lista.subjectList[index].getOreTot() + " ore");
+            System.out.println(" e " + lista.subjectList[index].getMntTot() + " minuti");
+        }
+        if(robaDaFare.equals("ore ord cresc")) {lista.printOre("ord cresc");}
     }
+
     //-------------------------------------------------------------------------------------------------------------------------------
     public static void printFile(String fileName) {
         String[] fileContent = null;
@@ -70,11 +78,10 @@ public class Main {
         printInstructions();
 
         System.out.println();
-        //cancella 1
-        System.out.println("Il file contiene:");
+        /*System.out.println("Il file contiene:");
         printFile(file);
         System.out.println();
-        pause();
+        pause();*/
         //cancella
         try                           {analyzeFile(file, lineFromWichFileStarts);}
         catch(FileNotFoundException e){System.out.println("Didn't find the file named: " + file);}
