@@ -4,7 +4,7 @@ public class Calendario {
     private String[] tipologiaStudio, luogoStudio;
     private String[][] approfondimenti, compagniaStudio;
     private int size; //ci sono elementi fino a size - 1
-        //constructors--------------------------------------------------------------------------------------------------------------------------
+    //constructors--------------------------------------------------------------------------------------------------------------------------
     public Calendario() {
         this.anno = new int[Settings.initialArrDim];
         this.mese = new int[Settings.initialArrDim];
@@ -112,7 +112,6 @@ public class Calendario {
     }
 
     public int getMntTimer(int index) throws NullArrayException, IndexOutOfBoundssException {
-        //if(this.mntTimer != null && index < this.mntTimer.length && index >= 0) return this.mntTimer[index];
         if(this.mntTimer == null) {
             throw new NullArrayException("array int[] mntTimer == null");
         } else if(index < 0 || index >= this.mntTimer.length) {
@@ -289,8 +288,6 @@ public class Calendario {
         catch(StringException e) {throw e;}
 
         addSize();
-        //ordina();
-        //aggiorna();
 
         return true;
     }
@@ -336,7 +333,6 @@ public class Calendario {
             for(int i = 0; i < arr.length; ++i) {
                 newArr[i] = arr[i];
             }
-            //CAPIRE SE NELLE CELLE NUOVE BISOGNA METTERCI UN QUALCHE VALORE TIPO -1 O COSA
         } else {
             throw new NullArrayException("Exception: Calendario.newSize was given a null array");
         }
@@ -353,7 +349,6 @@ public class Calendario {
             for(int i = 0; i < arr.length; ++i) {
                 newArr[i] = arr[i];
             }
-            //CAPIRE SE NELLE CELLE NUOVE BISOGNA METTERCI UN QUALCHE VALORE TIPO -1 O COSA
         } else {
             throw new NullArrayException("Exception: Calendario.newSize was given a null array");
         }
@@ -379,9 +374,6 @@ public class Calendario {
         System.out.print(mntTimer[i]+ "mnt ");
         System.out.print(tipologiaStudio[i]);
 
-    //2019\02\28 14:36-15:50 1h 8mnt "Architettura degli Elaboratori"\introduzione{Vale, compagnoUni}[aula studio Informatica]
-    //2019\03\16 19:03-20:58 1h 13mnt "Architettura degli elaboratori"/teoria(Rappresentazione in Eccesso, Floating Point){Gabuz, Berru, Gio}[casa]
-    //2019\01\28 1h 10mnt "Logica Matematica"\teoria
         System.out.print("(");
         for(int j = 0; j < approfondimenti[i].length && approfondimenti[i][j] != null; ++j) {
             if(j != 0) {System.out.print(", ");}

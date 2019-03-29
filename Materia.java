@@ -54,13 +54,10 @@ public class Materia {
     }
     //---------------------------------------------------------------------------------------------------------------------------------
     public boolean addSession(String[][] str) {
-        //ok l'idea e' di modificare della roba, farsi che quando creo la materia viene instanziato un calendario vuoto, e fare un
-        //metodo nella classe Calendario, dove io da qui ci schiaffo la stringa e basta e poi la separo come si deve in quel metodo
         boolean res = false;
         try{
             res = cal.addSession(str);
-            mntTot += Integer.parseInt(str[8][0]); //ho sbagliato che non sto incrementando i minuti in generale, ma solo nelle variabili delle varie materie
-            //devo creare variabili ore e minuti della lista
+            mntTot += Integer.parseInt(str[8][0]);
 
             while(mntTot >= 60) {
                 setMntTot(mntTot - 60);
