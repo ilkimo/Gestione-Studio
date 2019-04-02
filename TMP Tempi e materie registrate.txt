@@ -87,3 +87,4 @@ ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale
 2019_03_16_19_03_20_58_1_13_Architettura degli elaboratori_teoria_Rappresentazione in Eccesso, Floating Point_Gabuz, Berru, Gio_casa
 2019_03_17_16_23_17_26_0_44_Architettura degli elaboratori_teoria_Floating point: Standard IEEE754_Berru_casa
 2019_3_28_15_18_16_27_0_52_Architettura degli elaboratori_esercizi_Algebra Booleana_Livio_aula studio Info
+2019_3_29_15_30_16_30_1_0_Architettura degli elaboratori_Esercizi_Conversioni, Complemento a 2, Eccesso_Compagno uni_aula studio Informatica
