@@ -97,3 +97,4 @@ ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale
 2019_04_01_17_20_17_34_0_13_Architettura degli elaboratori_teoria_FND, FNC_null_aula studio Informatica
 2019_04_02_07_27_07_43_0_16_GitHub_teoria_installazione su Windows_null_treno
 2019_04_02_08_00_08_13_0_12_Linux_teoria_File sistem_null_tram
+2019_04_03_12_31_17_38_4_21_Programmazione 2_esercizi_Nodi, Liste dinamiche_null_aula studio Informatica
