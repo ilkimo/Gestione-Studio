@@ -42,13 +42,9 @@ Robe da fare:
 10) boh zio ora ho steso una lista veloce, ma c'e' sicuramente un botto di altra roba che non mi sta venendo in mente hahaha ciao
 
 ------------------
-STATO ATTUALE:
+STATO ATTUALE: CORREGGERE BUG DOPPIO UNDERSCORE NELL'AGGIUNTA DA TERMINALE DI UNA SESSIONE!
 
 - sto lavorando alla lettura e interpretazione dei dati in entrata dai file che contengono le sessioni di studio
 - FINIRE:
-	- DOVE SONO ORA: Materia.addSession(String str) {...} e provengo da ListaMaterie. addFormattedData(String[][] str)
-	- ListaMaterie.addFormattedData(String formattedData)
-	/	- ParserMateria.formatStr(Str string)
-	- ParserMateria.formatContent(String fileName)
-
+	- DOVE SONO ORA: implementare scrittura su file delle sessioni aggiunte da terminale
 ------------------

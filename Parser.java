@@ -1,6 +1,7 @@
 import java.io.*;
 
 public class Parser {
+    //-----------------------------------------------------------------------------------------------------------
     private static int fileLength(String fileName)throws FileNotFoundException, IOException {
         BufferedReader bf;
         int counter = 0;
@@ -35,25 +36,10 @@ public class Parser {
 
         return res;
     }
-
-    public static void main(String[] args){ //main di prova, cancellami poi
-        String nFile = "TMP Tempi e materie registrate.txt"; //"prova.txt"
-        String[] strFile;
-        try{
-            strFile = readFile(nFile);
-            System.out.println("Numero di righe: " + fileLength(nFile));
-
-            System.out.println("Ed il contenuto del file e': ");
-
-            for(int i = 0; i < fileLength(nFile); ++i){
-                System.out.println("    " + strFile[i]);
-            }
-        }
-        catch(FileNotFoundException e) {
-            System.out.println("File not found");
-        }
-        catch(IOException e) {
-            System.out.println("IOException");
-        }
+    //-----------------------------------------------------------------------------------------------------------
+    public static void writeFile(String str, String file) throws IOException {
+        PrintStream out = new PrintStream(new FileOutputStream(file, true));
+        out.append(str);
+        out.println();
     }
 }
