@@ -39,6 +39,7 @@ public class Parser {
     //-----------------------------------------------------------------------------------------------------------
     public static void writeFile(String str, String file) throws IOException {
         PrintStream out = new PrintStream(new FileOutputStream(file, true));
-        out.append(str + "\n");
+        out.append(str);
+        out.println();
     }
 }
