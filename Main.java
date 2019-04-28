@@ -41,13 +41,27 @@ public class Main {
             catch(IOException e) {System.out.println("Eccezione, correggi");}
             catch(ProjectException e) {throw e;}
         }
+        if(robaDaFare.equalsIgnoreCase("mediatot")) System.out.println("Tempo totale di studio: "+ averageHours());
 
         System.out.println();
         System.out.println("----------------------------------------------------------------------------------------------");
         printInstructions();
         System.out.println("----------------------------------------------------------------------------------------------");
     }
+    //-------------------------------------------------------------------------------------------------------------------------------
+    public static String averageHours() {
+        String res = "";
 
+        /* Robe da fare:
+         *   1) creare metodo che ordina il file per data e lancia errore in caso di overlapping sessions
+         *   2) costruire questo metodo basandosi sul fatto che sul file si abbiano dati ordinati
+         *       - utilizzare metodi (che dovrebbero gia' esistere) per ricavare totH e totMnt
+         *       - prendere la data della prima sessione (ordinata) e dell'ultima, calcolare DELTA tempo
+         *       - calcolare la media convertendo le ore in minuti e sommandoci i minuti, ritornare come String
+         */
+
+        return res;
+    }
     //-------------------------------------------------------------------------------------------------------------------------------
     public static void printFile(String fileName) {
         String[] fileContent = null;
