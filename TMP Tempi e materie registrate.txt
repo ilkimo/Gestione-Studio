@@ -170,3 +170,4 @@ ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale
 2019_05_09_09_54_10_23_0_29_Programmazione_esercizi_Thread_null_aula info
 2019_05_09_13_28_14_19_0_51_Programmazione_esercizi_Mandelbrot set_null_aula studio informatica
 2019_05_09_15_23_17_30_2_04_Architettura degli elaboratori_teoria_Full adder, propagazione di riporto, selezione di riporto_null_aula studio info
+2019_05_09_21_46_22_33_0_36_Architettura degli elaboratori_teoria_ALU_null_casa
