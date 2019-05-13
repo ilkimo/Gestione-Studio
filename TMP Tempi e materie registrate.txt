@@ -188,3 +188,4 @@ ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale
 2019_05_13_18_00_19_00_1_0_Analisi 1_teoria_Sviluppi di Taylor_null_casa
 2019_05_13_19_03_19_40_0_35_Architettura degli elaboratori_teoria_Latch D temporizzato_null_casa
 2019_05_13_19_57_20_23_0_26_Programmazione 2_teoria_Classi e Oggetti_null_casa
+2019_05_13_22_51_23_40_0_49_Programmazione 2_teoria_Classi e Oggetti_null_casa
