@@ -41,7 +41,7 @@ public class Main {
             catch(IOException e) {System.out.println("Eccezione, correggi");}
             catch(ProjectException e) {throw e;}
         }
-        if(robaDaFare.equalsIgnoreCase("mediatot")) System.out.println("Tempo totale di studio: "+ averageHours());
+        if(robaDaFare.equalsIgnoreCase("media giornaliera")) System.out.println("Media giornaliera: "+ averageDay());
 
         System.out.println();
         System.out.println("----------------------------------------------------------------------------------------------");
@@ -49,16 +49,26 @@ public class Main {
         System.out.println("----------------------------------------------------------------------------------------------");
     }
     //-------------------------------------------------------------------------------------------------------------------------------
-    public static String averageHours() {
+    public static String averageDay() {
         String res = "";
 
         /* Robe da fare:
-         *   1) creare metodo che ordina il file per data e lancia errore in caso di overlapping sessions
-         *   2) costruire questo metodo basandosi sul fatto che sul file si abbiano dati ordinati
-         *       - utilizzare metodi (che dovrebbero gia' esistere) per ricavare totH e totMnt
-         *       - prendere la data della prima sessione (ordinata) e dell'ultima, calcolare DELTA tempo
-         *       - calcolare la media convertendo le ore in minuti e sommandoci i minuti, ritornare come String
+         *  1) Passare in rassegna tutte le sessioni,
+         *      segnandosi la data piu' lontana e vicina ad oggi, sommando ore e minuti,
+         *      ma tenendo tutto il tempo salvato sotto forma di minuti
+         *  2) Dividere i minuti totali per i giorni trascorsi
+         *  3) Convertire i minuti giornalieri in h e mnt, convertire in Stringa e ritornare la Stringa
          */
+
+         if(lista != null) {
+             int nMaterie = lista.getNumMaterieOrdineCrono();
+             long mntTot;
+             for(int i = 0;i < nMaterie; ++i) {
+                 
+             }
+         } else {
+             //nothing
+         }
 
         return res;
     }
@@ -95,7 +105,7 @@ public class Main {
 
             for(int i = 0; lista != null && i < formattedContent.length; ++i) {
                 lista.addFormattedData(formattedContent[i]);
-                //potrei conteare le operazioni che hanno successo sfruttando il metodo booleano addFormattedData
+                //potrei contare le operazioni che hanno successo sfruttando il metodo booleano addFormattedData
             }
         }
     }
