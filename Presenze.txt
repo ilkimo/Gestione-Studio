@@ -1,0 +1,81 @@
+ANNO/MESE/GIORNO totH "Materia 1", totH "Materia 2", ...
+
+2019/02/28 2h "Analisi Matematica"/teoria, 2h "Architettura degli elaboratori"/teoria
+2019/03/1 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/03/04 2h "Architettura degli elaboratori"/teoria
+2019/03/05 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/03/06 3h "Programmazione 2"/laboratorio
+2019/03/07 2h "Analisi Matematica"/esercizatione, 2h "Architettura degli elaboratori"/teoria
+2019/03/07 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/03/11 2h "Architettura degli elaboratori"/teoria, 2h "Analisi Matematica"/esercitazione
+2019/03/12 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/03/13 3h "Programmazione 2"/laboratorio
+2019/03/14 2h "Analisi Matematica"/teoria
+2019/03/15 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"
+2019/03/18 2h "Architettura degli elaboratori"/teoria
+2019/03/19 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria(Vettori di oggetti, invarianti di classe), 3h "Architettura degli elaboratori"/laboratorio
+2019/03/20 3h "Programmazione 2"/laboratorio
+2019/03/21 2h "Analisi Matematica"/esercitazione, 2h "Architettura degli elaboratori"/teoria
+2019/03/22 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/03/25 2h "Architettura degli elaboratori", 1h "Analisi Matematica"/esercitazione
+2019/03/26 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/03/27 3h "Programmazione 2"/laboratorio, 2h "Programmazione 2"/esercitazione
+2019/03/28 2h "Programmazione 2"/esercitazione, 2h "Architettura degli elaboratori"/teoria
+2019/03/29 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/04/01 2h "Architettura degli elaboratori"/teoria
+2019/04/02 2h "Analisi Matematica"/teoria, 2h Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/04/03 3h "Programmazione 2"/laboratorio
+2019/04/04 2h "Analisi Matematica"/esercitazione, 4h "Architettura degli elaboratori"/esercitazione
+2019/04/05 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/04/08 2h "Architettura degli elaboratori"/teoria
+2019/04/09 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/04/10 3h "Programmazione 2"/laboratorio
+2019/04/11 2h "Analisi Matematica"/esercitazione, 2h "Architettura degli elaboratori"/teoria, 2h "Programmazione 2"/teoria
+2019/04/15 2h "Architettura degli elaboratori"/teoria
+2019/04/16 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/04/17 2h "Programmazione 2"/esercitazione
+2019/04/29 2h "Architettura degli elaboratori"/teoria
+2019/04/30 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/05/02 2h "Analisi Matematica"/esercitazione, 2h "Architettura degli elaboratori"/teoria
+2019/05/03 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/05/06 2h "Architettura degli elaboratori"/teoria
+2019/05/07 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/05/09 2h "Analisi Matematica"/esercitazione, 2h "Architettura degli elaboratori"/teoria
+2019/05/10 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/05/13 3h "Architettura degli elaboratori"/laboratorio
+2019/05/14 2h "Programmazione 2"/teoria, 3h "Architettura degli elaboratori"/laboratorio
+2019/05/17 2h "Programmazione 2"/teoria
+2019/05/20 2h "Architettura degli elaboratori"/teoria
+2019/05/22 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/teoria
+2019/05/23 2h "Analisi Matematica"/esercitazione, 2h "Architettura degli elaboratori"/teoria
+2019/05/27 2h "Analisi Matematica"/teoria, 2h "Architettura degli elaboratori"/teoria
+2019/05/30 2h "Architettura degli elaboratori"/teoria, 2h "Architettura degli elaboratori"/esercitazione
+2019/05/31 2h "Analisi Matematica"/teoria, 2h "Programmazione 2"/esercitazione
+2019/06/03 2h "Architettura degli elaboratori"/teoria
+2019/06/06 4h "Architettura degli elaboratori"/esercitazione
+2019/09/24 2h "Linguaggi Formali e Traduttori"/teoria
+2019/09/24 2h "Sistemi Operativi"/teoria
+2019/09/24 2h "Elementi di Probabilita e Statistica"/teoria
+2019/09/25 2h "Sistemi Operativi"/laboratorio
+2019/09/25 2h "Linguaggi Formali e Traduttori"/teoria
+2019/09/25 2h "Sistemi Operativi"/teoria
+2019/09/26 2h "Elementi di Probabilita e Statistica"/teoria
+2019/09/26 2h "Sistemi Operativi"/laboratorio
+2019/09/30 5h "Sistemi Operativi"/laboratorio
+2019/10/01 2h "Linguaggi Formali e Traduttori"/teoria
+2019/10/01 2h "Sistemi Operativi"/teoria
+2019/10/01 2h "Elementi di Probabilita e Statistica"/teoria
+2019/10/02 2h "Sistemi Operativi"/laboratorio
+2019/10/02 2h "Linguaggi Formali e Traduttori"/teoria
+2019/10/02 2h "Sistemi Operativi"/teoria
+2019/10/03 2h "Elementi di Probabilita e Statistica"/esercitazione
+2019/10/03 2h "Sistemi Operativi"/laboratorio
+2019/10/07 2h "Sistemi Operativi"/laboratorio
+2019/10/07 3h "Linguaggi Formali e Traduttori"/laboratorio
+2019/10/09 2h "Sistemi Operativi"/laboratorio
+2019/10/09 2h "Linguaggi Formali e Traduttori"/teoria
+2019/10/09 2h "Sistemi Operativi"/teoria
+2019/10/10 2h "Elementi di Probabilita e Statistica"/teoria
+2019/10/10 2h "Sistemi Operativi"/laboratorio
+2019/10/14 2h "Sistemi Operativi"/laboratorio
+2019/10/14 3h "Linguaggi Formali e Traduttori"/laboratorio
