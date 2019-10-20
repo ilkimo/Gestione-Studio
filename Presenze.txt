@@ -79,3 +79,7 @@ ANNO/MESE/GIORNO totH "Materia 1", totH "Materia 2", ...
 2019/10/10 2h "Sistemi Operativi"/laboratorio
 2019/10/14 2h "Sistemi Operativi"/laboratorio
 2019/10/14 3h "Linguaggi Formali e Traduttori"/laboratorio
+2019/10/16 2h "Sistemi Operativi"/laboratorio
+2019/10/17 2h "Sistemi Operativi"/laboratorio
+2019/10/17 2h "Elementi di Probabilita' e Statistica"/teoria
+
