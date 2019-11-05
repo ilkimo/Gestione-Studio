@@ -88,6 +88,17 @@ ANNO/MESE/GIORNO totH "Materia 1", totH "Materia 2", ...
 2019/10/22 2h "Sistemi Operativi"/teoria
 2019/10/22 2h "Elementi di Probabilita' e Statistica"/teoria
 2019/10/23 2h "Linguaggi Formali e Traduttori"/teoria
+2019/10/28 2h "Sistemi Operativi"/laboratorio
+2019/10/28 2h "Linguaggi Formali e Traduttori"/laboratorio
+2019/10/29 2h "Linguaggi FOrmali e Traduttori"/teoria
+2019/10/29 2h "Sistemi Operativi"teoria
+2019/10/23 2h "Elementi di Probabilita' e Statistica"/teoria
+2019/10/23 2h "Sistemi Operativi"/laboratorio
+2019/10/30 2h "Linguaggi Formali e Traduttori"/teoria
+2019/10/30 2h "Sistemi Operativi"/teoria
+2019/11/05 2h "Linguaggi Formali e Traduttori"/teoria
+2019/11/05 2h "Sistemi Operativi"/teoria
+2019/11/05 2h "Elementi di Probabilita' e Statistica"/teoria
 2019/10/23 2h "Sistemi Operativi"/teoria
 2019/10/24 2h "Elementi di Probabilita' e Statistica"/esercizi
 2019/10/24 2h "Sistemi Operativi"/laboratorio
