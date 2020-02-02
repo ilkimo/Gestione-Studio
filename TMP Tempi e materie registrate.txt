@@ -669,3 +669,7 @@ ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale
 2020_02_01_13_01_13_20_0_18_Elementi di Probabilita' e Statistica_esercizi_variabili aleatorie_Vale_casa
 2020_02_01_15_02_15_26_0_23_Elementi di Probabilita' e Statistica_teoria_ripasso_Vale_casa
 2020_02_01_15_40_18_11_1_54_Elementi di Probabilita' e Statistica_esercizi_Variabili aleatorie_Vale_casa
+2020_02_01_19_00_19_20_0_19_Elementi di Probabilita' e Statistica_esercizi_variabili aleatorie di Poisson_Vale_casa
+2020_02_01_19_20_20_15_0_53_Elementi di Probabilita' e Statistica_teoria_v.a.: media, varianza_Vale_casa
+2020_02_01_21_59_23_25_1_23_Elementi di Probabilita' e Statistica_esercizi_v.a.: varianza_Vale_casa
+2020_02_01_23_40_02_07_1_57_Elementi di Probabilita' e Statistica_teoria_v.a.: Media e Varianza_Vale_casa
