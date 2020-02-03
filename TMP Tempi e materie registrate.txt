@@ -673,3 +673,10 @@ ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale
 2020_02_01_19_20_20_15_0_53_Elementi di Probabilita' e Statistica_teoria_v.a.: media, varianza_Vale_casa
 2020_02_01_21_59_23_25_1_23_Elementi di Probabilita' e Statistica_esercizi_v.a.: varianza_Vale_casa
 2020_02_01_23_40_02_07_1_57_Elementi di Probabilita' e Statistica_teoria_v.a.: Media e Varianza_Vale_casa
+2020_02_02_10_15_10_55_0_39_Elementi di Probabilita' e Statistica_teoria_ripasso_Vale_casa
+2020_02_02_11_10_12_04_0_41_Elementi di Probabilita' e Statistica_teoria_PMF congiunte_Vale_casa
+2020_02_02_12_48_14_22_1_18_Elementi di Probabilita' e Statistica_teoria_PMF congiunte_Vale_casa
+2020_02_02_15_49_16_30_0_32_Elementi di Probabilita' e Statistica_teoria_Indipendenza di v.a._Vale, FrAccra_Spyder
+2020_02_02_16_57_19_35_2_09_Elementi di Probabilita' e Statistica_esercizi_variabili aleatorie_Vale, FrAccra, Pava_Spyder
+2020_02_02_22_30_00_56_1_57_Elementi di Probabilita' e Statistica_Esercizi_variabili aleatorie discrete_Vale_casa
+2020_02_03_1_05_2_05_1_0_Elementi di Probabilita' e Statistica_teoria_v.a. continue_Vale_casa
