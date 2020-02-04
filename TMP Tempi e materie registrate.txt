@@ -680,3 +680,8 @@ ANNO\MESE\GIORNO time1 time2 h mnt "Materia"\eventualeRamoDellaMateria(eventuale
 2020_02_02_16_57_19_35_2_09_Elementi di Probabilita' e Statistica_esercizi_variabili aleatorie_Vale, FrAccra, Pava_Spyder
 2020_02_02_22_30_00_56_1_57_Elementi di Probabilita' e Statistica_Esercizi_variabili aleatorie discrete_Vale_casa
 2020_02_03_1_05_2_05_1_0_Elementi di Probabilita' e Statistica_teoria_v.a. continue_Vale_casa
+2020_02_03_10_40_11_57_0_59_Elementi di Probabilita' e Statistica_teoria_ripasso_Vale_casa
+2020_02_03_12_28_13_19_0_38_Elementi di Probabilita' e Statistica_teoria_v.a. continue_Vale_casa
+2020_02_03_15_02_16_01_0_49_Elementi di Probabilita' e statistica_teoria_CDF_Vale_casa
+2020_02_03_18_41_19_45_0_32_Elementi di Probabilita' e Statistica_teoria_esercizi_R_casa
+2020_02_03_21_10_23_16_1_21_Elementi di Probabilita' e Statistica_teoria_esercizi_R_casa
