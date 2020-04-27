@@ -6,7 +6,21 @@ import java.util.ArrayList;
 import java.io.PrintWriter;
 import java.io.FileOutputStream;
 
+/**
+ * Makes moving lines (that match a regular expression) of a file
+ * into another file as easy as a function call
+ */
 public class PatternSplitter {
+    /**
+     * Reads all the lines contained in the file pointed by path_in,
+     * appending the ones that match with the given regular expression to the file
+     * pointed by path_out
+     * @param path_in path to the input file
+     * @param path_out path to the output file
+     * @param regexStr a regular expression usable by Pattern.compile(String regex)
+     * @throws Error if at least one of the given files does not exist
+     * @throws Exception if some file isn't found after the first check which throws an Error
+     */
     public static String split(String path_in, String path_out,
                             String regexStr) throws Exception {
         String splitted_and_total_lines = "null";
@@ -24,12 +38,12 @@ public class PatternSplitter {
         return splitted_and_total_lines;
     }
 
-    public static boolean file_exists(String path) {
+    private static boolean file_exists(String path) {
         File f = new File(path);
         return f.exists() && f.isFile();
     }
 
-    public static String start_matching(String path_in, String path_out, String regexStr) throws Exception {
+    private static String start_matching(String path_in, String path_out, String regexStr) throws Exception {
         int matches = 0, total_lines = 0;
         Scanner stream_in = null;
         String file_line = "";
@@ -65,11 +79,11 @@ public class PatternSplitter {
         return "" + matches + "/" + total_lines;
     }
 
-    public static boolean matches(String str, Pattern pattern) {
+    private static boolean matches(String str, Pattern pattern) {
         return pattern.matcher(str).matches();
     }
 
-    public static void rewrite_file(String file, ArrayList<String> lines) throws Exception {
+    private static void rewrite_file(String file, ArrayList<String> lines) throws Exception {
         PrintWriter stream_out = null;
 
         try {
