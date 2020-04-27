@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.io.PrintWriter;
+import java.io.File;
 
 public class RawSessionsAnalyzer {
     public static final String regexStr = "([0-9]+_){9}.+";
@@ -29,12 +30,22 @@ public class RawSessionsAnalyzer {
         }
     }
 
-    public static int n_lines(String file_path) {
-        Scanner input = null;
+    public static int n_lines(String file_path) throws Exception {
+        Scanner input_stream = null;
+        int counter = 0;
 
         try {
-            input =
-        } catch(Exception e) {}
+            input_stream = new Scanner(new File(file_path));
+        } catch(Exception e) {throw e;}
+
+        while(input_stream.hasNextLine()) {
+            input_stream.nextLine();
+            counter++;
+        }
+
+        input_stream.close();
+
+        return counter;
     }
 
     public static void main(String[] args) throws Exception {
@@ -50,8 +61,6 @@ public class RawSessionsAnalyzer {
             try {
                 matches = PatternSplitter.split(args[0], args[1], regexStr);
             } catch(Exception e) {throw e;}
-
-            // TODO verify that the sum of the 2 files still contains total_lines lines
 
             System.out.println("matches: " + matches);
         }
