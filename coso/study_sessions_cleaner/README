@@ -1,0 +1,4 @@
+Build: use Ant (there is an build.xml file in . of the Project)
+
+FUNZIONAMENTO:
+	RawSessionsAnalyzer.class needs 2 args <inputfile> <outputfile> to function

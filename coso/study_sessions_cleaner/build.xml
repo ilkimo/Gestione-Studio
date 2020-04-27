@@ -1,0 +1,37 @@
+<?xml version = "1.0"?>
+<project name = "study_sessions_cleaner" basedir = "." default = "run">
+    <property name = "src.dir" value = "src"/>
+    <property name = "build.dir" value = "bin"/>
+    <property name = "application" value = "RawSessionsAnalyzer"/>
+    <property name = "inputfilepath" value = "files/input"/>
+    <property name = "outputfilepath" value = "files/output"/>
+
+    <target name = "run" depends = "build">
+        <java classname = "${application}">
+            <arg value = "${inputfilepath}"/>
+            <arg value = "${outputfilepath}"/>
+
+            <classpath>
+                <pathelement path = "${build.dir}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name = "build" depends = "make bin">
+        <javac destdir = "${build.dir}" failonerror = "true" includeantruntime = "false">
+            <src path = "${src.dir}"/>
+        </javac>
+    </target>
+
+    <target name = "make bin">
+        <mkdir dir = "${build.dir}"/>
+    </target>
+
+    <target name = "clean" description = "Cleans the ${build.dir} directory">
+        <delete>
+            <fileset dir = "${build.dir}">
+                <include name = "**/*.class"/>
+            </fileset>
+        </delete>
+    </target>
+</project>
