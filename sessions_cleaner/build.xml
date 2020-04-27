@@ -1,5 +1,5 @@
 <?xml version = "1.0"?>
-<project name = "study_sessions_cleaner" basedir = "." default = "run">
+<project name = "sessions_cleaner" basedir = "." default = "run">
     <property name = "src.dir" value = "src"/>
     <property name = "build.dir" value = "bin"/>
     <property name = "application" value = "RawSessionsAnalyzer"/>
@@ -29,9 +29,14 @@
 
     <target name = "clean" description = "Cleans the ${build.dir} directory">
         <delete>
+            <file name = "${outputfilepath}"/>
+            <file name = "${inputfilepath}"/>
             <fileset dir = "${build.dir}">
                 <include name = "**/*.class"/>
             </fileset>
         </delete>
+
+        <touch file = "${outputfilepath}"/>
+        <touch file = "${inputfilepath}"/>
     </target>
 </project>
