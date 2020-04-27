@@ -3,7 +3,7 @@ import java.io.PrintWriter;
 import java.io.File;
 
 public class RawSessionsAnalyzer {
-    public static final String regexStr = "([0-9]+_){9}([^_]+_){4}.+"; //"([0-9]+_){9}.+";
+    public static final String regexStr = "([0-9]+_){9}([^_]+_){4}.+";
 
     public static void ask_and_clean(String path) {
         Scanner t = new Scanner(System.in);
