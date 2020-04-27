@@ -136,8 +136,18 @@ ANNO/MESE/GIORNO totH "Materia 1", totH "Materia 2", ...
 2019/12/11 2h Corso Android/n/casa
 2020/01/07 2h "Linguaggi Formali e Traduttori"/esercitazione
 2020/01/07 2h "Sistemi Operativi"/teoria
-2020/01/08 2h Corso Android
+2020/01/08 2h "Corso Android"/teoria
 2020/01/14 2h "Linguaggi Formali e Traduttori"/esercitazione
 2020/01/14 2h "Sistemi Operativi"/teoria
 2020/01/22 2h "corso Android"/teoria
 2020/01/22 2h "corso Android"/teoria
+2020/02/12 2h "corso Android"/teoria
+2020/02/19 2h "corso Android"/teoria
+2020/03/04 2h "corso Android"/teoria
+2020/03/18 2h "corso Android"/teoria
+2020/03/25 2h "corso Android"/teoria
+2020/04/01 2h "corso Android"/teoria
+2020/04/08 2h "corso Android"/teoria
+2020/04/15 2h "corso Android"/teoria
+2020/04/22 2h "corso Android"/teoria
+
