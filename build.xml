@@ -1,0 +1,32 @@
+<?xml version = "1.0"?>
+<project name = "Gestione-Studio" basedir = "." default = "run">
+    <property name = "src.dir" value = "src/old"/>
+    <property name = "build.dir" value = "bin"/>
+    <property name = "application" value = "Main"/>
+
+    <target name = "run" depends = "build">
+        <java classname = "${application}">
+            <classpath>
+                <pathelement path = "${build.dir}"/>
+            </classpath>
+        </java>
+    </target>
+
+    <target name = "build" depends = "make bin">
+        <javac destdir = "${build.dir}" failonerror = "true" includeantruntime = "false">
+            <src path = "${src.dir}"/>
+        </javac>
+    </target>
+
+    <target name = "make bin">
+        <mkdir dir = "${build.dir}"/>
+    </target>
+
+    <target name = "clean" description = "Cleans the ${build.dir} directory">
+        <delete>
+            <fileset dir = "${build.dir}">
+                <include name = "**/*.class"/>
+            </fileset>
+        </delete>
+    </target>
+</project>

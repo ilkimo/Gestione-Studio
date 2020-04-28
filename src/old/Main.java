@@ -10,15 +10,15 @@ public class Main {
     public static ListaMaterie lista = null;
     public static final int lineFromWichFileStarts = 2, annoMinimo = 2019;
 
-    public static String file = "TMP Tempi e materie registrate.txt";
+    public final static String file = "saved_data/all_sessions";
     //-------------------------------------------------------------------------------------------------------------------------------
     public static void printInstructions() {
         System.out.println(Utility.ANSI_YELLOW + "Instructions list:" + Utility.ANSI_RESET);
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "e" + Utility.ANSI_RESET + (char)34 + " per uscire.");
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "p" + Utility.ANSI_RESET + (char)34 + " per stampare le sessioni per ogni materia");
-        System.out.println("    - " + (char)34 + Utility.ANSI_RED + "toth" + Utility.ANSI_RESET + (char)34 + "per stampare il numero di ore di studio totali");
+        System.out.println("    - " + (char)34 + Utility.ANSI_RED + "toth" + Utility.ANSI_RESET + (char)34 + " per stampare il numero di ore di studio totali");
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "h nomeMateria" + Utility.ANSI_RESET + (char)34 +  " per stampare il numero di ore di studio di quella mateira, se esiste");
-        System.out.println("    - " + (char)34 + Utility.ANSI_RED + "h ord cresc" + Utility.ANSI_RESET + (char)34 + "per stampare n.ore delle materie ordinate in modo crescente");
+        System.out.println("    - " + (char)34 + Utility.ANSI_RED + "h ord cresc" + Utility.ANSI_RESET + (char)34 + " per stampare n.ore delle materie ordinate in modo crescente");
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "add S" + Utility.ANSI_RESET + (char)34 + " to add a new Session");
 
         System.out.println();
@@ -64,7 +64,7 @@ public class Main {
              int nMaterie = lista.getNumMaterieOrdineCrono();
              long mntTot;
              for(int i = 0;i < nMaterie; ++i) {
-                 
+
              }
          } else {
              //nothing
@@ -123,17 +123,22 @@ public class Main {
         printInstructions();
         System.out.println();
 
-        try                           {analyzeFile(file, lineFromWichFileStarts);}
-        catch(FileNotFoundException e){System.out.println("Didn't find the file named: " + file);}
-        catch(IOException e)          {System.out.println("IOException in reading file: " + file);}
+        try {
+            analyzeFile(file, lineFromWichFileStarts);
+        } catch(FileNotFoundException e) {
+            System.out.println("Didn't find the file named: " + file);
+        } catch(IOException e) {
+            System.out.println("IOException in reading file: " + file);
+        }
 
-        try{
-            do{
+        try {
+            do {
                 System.out.print("Next Instruction: ");
                 risposta = tastiera.nextLine();
                 if(!risposta.equalsIgnoreCase("e")) {fai(risposta);}
             } while(!risposta.equalsIgnoreCase("e"));
+        } catch(ProjectException e) {
+            System.out.println(e.getMessage());
         }
-        catch(ProjectException e) {System.out.println(e.getMessage());}
     }
 }
