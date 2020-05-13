@@ -63,6 +63,7 @@ public class RawSessionsAnalyzer {
             } catch(Exception e) {throw e;}
 
             System.out.println("matches: " + matches);
+            System.out.println("If you want to import the matching sessions in the project, run \"ant import_sessions\"");
         }
     }
 }

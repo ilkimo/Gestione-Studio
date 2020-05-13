@@ -151,3 +151,4 @@ ANNO/MESE/GIORNO totH "Materia 1", totH "Materia 2", ...
 2020/04/15 2h "corso Android"/teoria
 2020/04/22 2h "corso Android"/teoria
 2020/04/29 2h "corso Android"/test
+2020/05/07 2h "corso Android"/teoria

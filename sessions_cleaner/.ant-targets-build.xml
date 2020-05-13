@@ -1,0 +1,5 @@
+build
+clean
+import_sessions
+make
+run

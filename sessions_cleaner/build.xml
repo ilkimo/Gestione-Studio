@@ -5,6 +5,9 @@
     <property name = "application" value = "RawSessionsAnalyzer"/>
     <property name = "inputfilepath" value = "files/input"/>
     <property name = "outputfilepath" value = "files/output"/>
+    <property name = "outputfilename" value = "output"/>
+    <property name = "filesdir" value = "files"/>
+    <property name = "allsessionsfilepath" value = "../saved_data/all_sessions"/>
 
     <target name = "run" depends = "build">
         <java classname = "${application}">
@@ -21,6 +24,12 @@
         <javac destdir = "${build.dir}" failonerror = "true" includeantruntime = "false">
             <src path = "${src.dir}"/>
         </javac>
+    </target>
+
+    <target name = "import_sessions">
+        <concat destfile="${allsessionsfilepath}" append="true">
+            <filelist dir="${filesdir}" files="${outputfilename}"/>
+        </concat>
     </target>
 
     <target name = "make bin">
