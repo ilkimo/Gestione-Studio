@@ -17,7 +17,7 @@ public class Main {
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "e" + Utility.ANSI_RESET + (char)34 + " per uscire.");
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "p" + Utility.ANSI_RESET + (char)34 + " per stampare le sessioni per ogni materia");
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "toth" + Utility.ANSI_RESET + (char)34 + " per stampare il numero di ore di studio totali");
-        System.out.println("    - " + (char)34 + Utility.ANSI_RED + "h nomeMateria" + Utility.ANSI_RESET + (char)34 +  " per stampare il numero di ore di studio di quella mateira, se esiste");
+        System.out.println("    - " + (char)34 + Utility.ANSI_RED + "h nomeMateria" + Utility.ANSI_RESET + (char)34 +  " per stampare il numero di ore di studio di quella materia, se esiste");
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "h ord cresc" + Utility.ANSI_RESET + (char)34 + " per stampare n.ore delle materie ordinate in modo crescente");
         System.out.println("    - " + (char)34 + Utility.ANSI_RED + "add S" + Utility.ANSI_RESET + (char)34 + " to add a new Session");
 
