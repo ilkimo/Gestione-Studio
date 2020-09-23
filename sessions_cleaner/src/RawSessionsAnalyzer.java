@@ -5,6 +5,10 @@ import java.io.File;
 public class RawSessionsAnalyzer {
     public static final String regexStr = "([0-9]+_){9}([^_]+_){4}.+";
 
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
+
     public static void ask_and_clean(String path) {
         Scanner t = new Scanner(System.in);
         System.out.println("Do you want to clean " + path + " before the execution (y/n)?");
@@ -63,7 +67,19 @@ public class RawSessionsAnalyzer {
             } catch(Exception e) {throw e;}
 
             System.out.println("matches: " + matches);
-            System.out.println("If you want to import the matching sessions in the project, run \"ant import_sessions\"");
+            System.out.println("If you want to import the matching sessions in the project, run \"ant import_sessions\"\n" );
+
+            if(!perfectMatch(matches)) {
+                throw new Error(ANSI_RED + "Error: some lines didn't match, take care of it!!" + ANSI_RESET);
+            }
+
+            System.out.print(ANSI_GREEN); //TODO enabes green text for 'ant' using this program
         }
+    }
+
+    public static boolean perfectMatch(String matches) {
+        int l = matches.length(), divider_index = matches.indexOf('/');
+
+        return (matches.substring(0, divider_index).equals(matches.substring(divider_index+1, l)));
     }
 }
