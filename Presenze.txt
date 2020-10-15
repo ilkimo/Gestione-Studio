@@ -156,3 +156,11 @@ ANNO/MESE/GIORNO totH "Materia 1", totH "Materia 2", ...
 2020/05/13 2h "Corso Android"/teoria
 2020/05/20 2h "Corso Android"/teoria
 2020/05/27 2h "Corso Android"/teoria
+2020/10/01 2h "Interazione Uomo Macchina"/teoria
+2020/10/02 2h "Linguaggi e Paradigmi di Programmazione"/laboratorio
+2020/10/06 2h "Reti 1/teoria"
+2020/10/07 2h "Reti 1/teoria"
+2020/10/08 2h "Interazione Uomo Macchina"/teoria
+2020/10/09 2h "Linguaggi e Paradigmi di Programmazione"/laboratorio
+2020/10/13 2h "Reti 1"/teoria
+2020/10/14 2h "Reti 1"/teoria
