@@ -172,6 +172,10 @@ ANNO/MESE/GIORNO totH "Materia 1", totH "Materia 2", ...
 2020/10/23 2h "Linguaggi e Paradigmi di Programmazione"/laboratorio
 2020/10/27 2h "Reti 1"/teoria
 2020/10/28 2h "Reti 1"/teoria
+2020/11/03 2h "Reti 1"/teoria
+2020/11/04 2h "Reti 1"/teoria
+2020/11/05 2h "Reti 1"/teoria
+2020/11/06 2h "Linguaggi e Paradigmi di Programmazione"/laboratorio
 2020/10/29 1h "Programmazione 3"/laboratorio
 2020/10/30 1h "Tecnologie Web"/laboratorio
 2020/10/30 2h "Linguaggi e Paradigmi di Programmazione"/laboratorio
