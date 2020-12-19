@@ -195,10 +195,6 @@ public class Session implements Comparable<Session> {
         this.subjectArgumentsListProperty().set(subjectArgumentsList);
     }
     
-    /*
-    private final StringProperty place = new SimpleStringProperty();
-     */
-    
     public final StringProperty studyGroupProperty() {
         return this.studyGroup;
     }
@@ -227,28 +223,31 @@ public class Session implements Comparable<Session> {
     @Override
     public int compareTo(Session other) {
         int res = -1;
-    
-        if(this.getYear().compareTo(other.getYear()) == 0) {
-            if(this.getMonth().compareTo(other.getMonth()) == 0) {
-                if(this.getDay().compareTo(other.getDay()) == 0) {
-                    if(this.getBeginHour().compareTo(other.getBeginHour()) == 0) {
-                        if(this.getBeginMinute().compareTo(other.getBeginMinute()) == 0) {
-                            return 0;
+        
+        if((other != null) && (other instanceof Session)) {
+            if(this.getYear().compareTo(other.getYear()) == 0) {
+                if(this.getMonth().compareTo(other.getMonth()) == 0) {
+                    if(this.getDay().compareTo(other.getDay()) == 0) {
+                        if(this.getBeginHour().compareTo(other.getBeginHour()) == 0) {
+                            if(this.getBeginMinute().compareTo(other.getBeginMinute()) == 0) {
+                                return 0;
+                            } else {
+                                res = this.getBeginMinute().compareTo(other.getBeginMinute());
+                            }
                         } else {
-                            res = this.getBeginMinute().compareTo(other.getBeginMinute());
+                            res = this.getBeginHour().compareTo(other.getBeginHour());
                         }
                     } else {
-                        res = this.getBeginHour().compareTo(other.getBeginHour());
+                        res = this.getDay().compareTo(other.getDay());
                     }
                 } else {
-                    res = this.getDay().compareTo(other.getDay());
+                    res = this.getMonth().compareTo(other.getMonth());
                 }
             } else {
-                res = this.getMonth().compareTo(other.getMonth());
+                res = this.getYear().compareTo(other.getYear());
             }
-        } else {
-            res = this.getYear().compareTo(other.getYear());
         }
+    
     
         return res;
     }
