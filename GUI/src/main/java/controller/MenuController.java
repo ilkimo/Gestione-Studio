@@ -1,9 +1,9 @@
-package sample;
+package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.MenuBar;
-import javafx.scene.control.MenuItem;
 import javafx.stage.FileChooser;
+import model.DataModel;
 
 import java.io.File;
 

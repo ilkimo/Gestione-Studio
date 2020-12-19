@@ -1,4 +1,4 @@
-package sample;
+package model;
 
 import javafx.beans.Observable;
 import javafx.beans.property.ObjectProperty;

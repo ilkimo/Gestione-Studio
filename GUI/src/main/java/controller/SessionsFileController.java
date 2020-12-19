@@ -1,11 +1,13 @@
-package sample;
+package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SplitPane;
+import model.DataModel;
+import model.Session;
 
-public class ListController {
+public class SessionsFileController {
     private DataModel model;
     
     @FXML

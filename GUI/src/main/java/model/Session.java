@@ -1,9 +1,8 @@
-package sample;
+package model;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Session implements Comparable<Session> {
