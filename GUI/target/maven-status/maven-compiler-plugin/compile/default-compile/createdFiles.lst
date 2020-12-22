@@ -1,5 +1,9 @@
+model/TMPSession$Timer.class
+model/TMPSession.class
 controller/InputGridController.class
+model/TMPSession$1.class
 controller/SessionsFileController.class
+model/TMPSession$timerState.class
 controller/MenuController.class
 model/DataModel.class
 model/Session.class

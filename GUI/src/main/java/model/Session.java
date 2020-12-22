@@ -23,10 +23,12 @@ public class Session implements Comparable<Session> {
     private final StringProperty subjectArgumentsList = new SimpleStringProperty();
     private final StringProperty studyGroup = new SimpleStringProperty();
     private final StringProperty place = new SimpleStringProperty();
+    
     /**
      * Takes a formatted String containing the session information and creates a Session object
      * @param formattedString is expected to be like "2020_10_25_9_05_10_40_1_15_Programmazione_teoria_MVC_n_casa"
-     * */
+     * @throws Exception when the given string doesn't respect the correct pattern
+     */
     public Session(String formattedString) throws Exception {
         if(!isValidString(formattedString)) {
             throw new Exception("Exception: given string didn't respect pattern: " + regexStr);
@@ -48,6 +50,27 @@ public class Session implements Comparable<Session> {
         setSubjectArgumentsList(values[11]);
         setStudyGroup(values[12]);
         setPlace(values[13]);
+    }
+    
+    public Session(String year, String month, String day,
+                   String beginHour, String beginMinute, String endHour,
+                   String endMinute, String timerHours, String timerMinutes,
+                   String subject, String subjectBranch, String subjectSrgumentsList,
+                   String studyGroup, String place) {
+        setYear(year);
+        setMonth(month);
+        setDay(day);
+        setBeginHour(beginHour);
+        setBeginMinute(beginMinute);
+        setEndHour(endHour);
+        setEndMinute(endMinute);
+        setTimerHours(timerHours);
+        setTimerMinutes(timerMinutes);
+        setSubject(subject);
+        setSubjectBranch(subjectBranch);
+        setSubjectArgumentsList(subjectSrgumentsList);
+        setStudyGroup(studyGroup);
+        setPlace(place);
     }
     
     //Property + set() get() ---------------------------------------------------------------

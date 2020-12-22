@@ -52,6 +52,10 @@ public class DataModel {
         sessionsList.clear();
     }
     
+    public void addSession(Session s) {
+        sessionsList.add(s);
+    }
+    
     public void loadData(File file, boolean append) {
         Scanner inputStream = null;
         int formatExceptions = 0;

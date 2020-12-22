@@ -38,8 +38,8 @@
                         </Text>
                         <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="buttonSTART" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="START" />
-                              <Button fx:id="buttonSTOP" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="STOP" />
+                              <Button fx:id="buttonStart" onAction="#handleButtonStart" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="START" />
+                              <Button fx:id="buttonStop" onAction="#handleButtonStop" mnemonicParsing="false" prefHeight="150.0" prefWidth="150.0" text="STOP" />
                            </children>
                         </HBox>
                      </children>
@@ -51,13 +51,13 @@
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <Text layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
-                        <TextField layoutX="88.0" layoutY="17.0" prefHeight="26.0" prefWidth="184.0" />
+                        <TextField fx:id="fieldDate" layoutX="88.0" layoutY="17.0" prefHeight="26.0" prefWidth="184.0" />
                      </children>
                   </Pane>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <Text layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Subject" />
-                        <TextField layoutX="88.0" layoutY="17.0" prefHeight="26.0" prefWidth="184.0" />
+                        <TextField fx:id="fieldSubject" layoutX="88.0" layoutY="17.0" prefHeight="26.0" prefWidth="184.0" />
                      </children>
                   </Pane>
                </children>
@@ -67,13 +67,13 @@
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Place" />
-                        <TextField layoutX="76.0" layoutY="15.0" prefHeight="26.0" prefWidth="195.0" />
+                        <TextField fx:id="fieldPlace" layoutX="76.0" layoutY="15.0" prefHeight="26.0" prefWidth="195.0" />
                      </children>
                   </Pane>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <Text layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="People" />
-                        <TextField layoutX="75.0" layoutY="15.0" prefHeight="26.0" prefWidth="195.0" />
+                        <TextField fx:id="fieldPeople" layoutX="75.0" layoutY="15.0" prefHeight="26.0" prefWidth="195.0" />
                      </children>
                   </Pane>
                </children>
@@ -99,20 +99,20 @@
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <Text layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Branch" />
-                        <TextField layoutX="87.0" layoutY="14.0" prefHeight="26.0" prefWidth="184.0" />
+                        <TextField fx:id="fieldBranch" layoutX="87.0" layoutY="14.0" prefHeight="26.0" prefWidth="184.0" />
                      </children>
                   </Pane>
                   <Pane prefHeight="200.0" prefWidth="200.0">
                      <children>
                         <Text layoutX="14.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Args list" />
-                        <TextField layoutX="85.0" layoutY="14.0" prefHeight="26.0" prefWidth="184.0" />
+                        <TextField fx:id="fieldArgsList" layoutX="85.0" layoutY="14.0" prefHeight="26.0" prefWidth="184.0" />
                      </children>
                   </Pane>
                </children>
             </VBox>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="96.0" prefWidth="276.0" text="NEW SESSION" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <Button fx:id="ButtonNewSession" onAction="#handleNewSessionButton" mnemonicParsing="false" prefHeight="96.0" prefWidth="276.0" text="NEW SESSION" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                </children>
             </AnchorPane>
          </children>
