@@ -40,14 +40,28 @@ public class TMPSession {
         public StringProperty getRecordedTimeProperty() { return recordedTime; }
     
         public void start() {
-            //TODO
-            
             switch(timer.getTimerState()) {
                 case ZERO -> { System.out.println("ZERO --> RUNNING"); }
                 case RUNNING -> { System.out.println("RUNNING"); }
                 case STOPPED -> { System.out.println("STOPPED --> RUNNING"); }
             }
-        
+            
+            Thread t = new Thread() {
+                @Override
+                public void run() { //TODO fare qualcosa di sensato qui
+                    for(int i = 0; i < 10; i++) {
+                        System.out.println(i);
+                        try {
+                            sleep(1000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            };
+            
+            t.run(); //TODO capire come shutdownare il thread nel momento in cui venisse chiusa male l'applicazione
+            
             timer.setTimerState(timerState.RUNNING);
         }
     

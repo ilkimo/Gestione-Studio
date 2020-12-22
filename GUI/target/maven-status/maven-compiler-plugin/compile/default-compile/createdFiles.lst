@@ -8,6 +8,7 @@ controller/MenuController.class
 model/DataModel.class
 model/Session.class
 controller/SessionListViewController.class
+model/TMPSession$Timer$1.class
 sample/Main.class
 controller/SessionListViewController$1.class
 controller/SessionsFileController$1.class
