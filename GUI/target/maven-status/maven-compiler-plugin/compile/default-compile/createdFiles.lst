@@ -1,6 +1,6 @@
 model/TMPSession$Timer.class
-model/TMPSession.class
 controller/InputGridController.class
+model/TMPSession.class
 model/TMPSession$1.class
 controller/SessionsFileController.class
 model/TMPSession$timerState.class
@@ -10,6 +10,6 @@ model/Session.class
 controller/SessionListViewController.class
 model/TMPSession$Timer$1.class
 sample/Main.class
-controller/SessionListViewController$1.class
 controller/SessionsFileController$1.class
+controller/SessionListViewController$1.class
 controller/Controller.class
